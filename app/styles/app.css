@@ -1,0 +1,92 @@
+body,html{
+    margin: 0px;
+  }
+  header{
+    text-align: center;
+    font-size: 30px;
+    background-color: #a040a0;
+    color: white;
+    padding: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container > div{
+    width: 100%;
+  }
+  .container input[type="text"]{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJyZ2JhKDAsMCwwLDAuNCkiIGQ9Ik0xNS41IDE0aC0uNzlsLS4yOC0uMjdDMTUuNDEgMTIuNTkgMTYgMTEuMTEgMTYgOS41IDE2IDUuOTEgMTMuMDkgMyA5LjUgM1MzIDUuOTEgMyA5LjUgNS45MSAxNiA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    margin-top:15px;
+    margin-left: 10px;  
+    opacity: 0.5;
+    outline: none;
+    width: 99%;
+  }
+  
+  .pokemon-container{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .pokemon-item{
+    margin: 20px 20px;
+    border: 1px solid black;
+    height:140px;
+    min-width: 140px;
+    flex: 0 140px;
+  }
+  .pokemon-item:hover{
+      cursor: pointer;
+      opacity: 0.7;
+  }
+  .pokemon-item img{
+    height: 140px;
+    width: 140px;
+    background-color: blue;
+    display:block;
+  }
+  .pokemon-item p{
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  .parent-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:30px;
+  }
+  .pokemon-item-container{
+    border: 1px solid black;
+     overflow: auto;
+    min-width: 200px;
+    flex: 0 500px;
+    max-height: 80vh;
+    display:flex;
+    flex-direction: column;
+  }
+  .pokemon-item-container h1{
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    margin:0px;
+    color: white;
+  }
+  .pokemon-item-container img{
+    height: 140px;
+    width: 140px;
+    align-self: center;
+  }
+  .stats-container{
+    text-align: justify;
+    margin:auto;
+  }
+
+p,span,h1{
+    text-transform: capitalize;
+}

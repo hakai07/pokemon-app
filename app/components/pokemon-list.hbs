@@ -1,0 +1,9 @@
+<header>Pokemondax.org</header>
+<section class="container">
+    <SearchComponent/>
+    <div class="pokemon-container">
+        {{#each @pokemon as |pokemonObject| }}
+            <PokemonBox @pokemonObj={{pokemonObject}}/>
+        {{/each}}
+    </div>
+</section>

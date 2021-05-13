@@ -1,0 +1,5 @@
+<div class="stats-container">
+    {{#each-in @stats as |propertyName propertyValue|}}
+        <p><b>{{propertyName}} </b> <progress value={{propertyValue}} max="100"/></p>
+    {{/each-in}}
+</div>
