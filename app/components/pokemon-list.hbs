@@ -1,9 +1,13 @@
 <header>Pokemondax.org</header>
 <section class="container">
-    <SearchComponent/>
+    <SearchComponent @searchValue={{this.searchValue}} @updateDisplayblePokemons={{this.updateDisplayablePokemons}}/>
     <div class="pokemon-container">
-        {{#each @pokemon as |pokemonObject| }}
+        {{#each this.pokemon as |pokemonObject| }}
             <PokemonBox @pokemonObj={{pokemonObject}}/>
         {{/each}}
     </div>
 </section>
+<footer>
+    <LinkTo @route="pokemons" {{on "click" (fn this.setoffset this.prev)}}  @query={{hash offset=this.prev}} >Prev | </LinkTo>
+    <LinkTo @route="pokemons" {{on "click" (fn this.setoffset this.next)}} @query={{hash offset=this.next}} >Next</LinkTo>
+</footer>

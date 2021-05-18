@@ -90,3 +90,7 @@ body,html{
 p,span,h1{
     text-transform: capitalize;
 }
+
+footer{
+  text-align: center;
+}

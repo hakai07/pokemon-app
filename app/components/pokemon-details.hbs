@@ -1,7 +1,7 @@
 <section class="parent-container">
     <div class="pokemon-item-container">
-        <h1>{{@pokemon.name}}</h1>
-        <img src={{@pokemon.imageUrl}} alt="Error Occured"/>
-        <PokemonStats @stats={{@pokemon.stats}}/>
+        <h1>{{this.pokemon.name}}</h1>
+        <img src={{this.pokemon.imageUrl}} alt="Error Occured"/>
+        <PokemonStats @stats={{this.pokemon.stats}}/>
     </div>
 </section>

@@ -1,4 +1,4 @@
 <div>
     {{!-- template-lint-disable require-input-label --}}
-    <input type="text" placeholder="Search for pokemon"/>
+    <Input  @value={{@searchValue}} @type="text" placeholder="Search for pokemon" {{on "input" @updateDisplayblePokemons}}/>
 </div>
